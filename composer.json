@@ -2,6 +2,9 @@
     "name": "punt/cryptobook",
     "description": "Manage your crypto positions",
     "type": "project",
+    "require": {
+        "ramsey/uuid": "^4.7"
+    },
     "require-dev": {
         "phpunit/phpunit": "^11.5",
         "behat/behat": "^3.16"
@@ -10,6 +13,11 @@
     "autoload": {
         "psr-4": {
             "Punt\\Cryptobook\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Punt\\Cryptobook\\Tests\\": "tests/"
         }
     },
     "authors": [
